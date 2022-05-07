@@ -17,10 +17,11 @@ with open(inFilePath, encoding="utf-8", mode="+r") as inFile:
                 mappedNumber = lastUsedNumber
             finally:
                 outStr += str(mappedNumber)
+                outStr += "-"
 
-outStr += ";"
+outStr += "#LEOPONTOVIRGULALEO#"
 for key in mapping.keys():
-    outStr += key + ":" + str(mapping[key]) + ","
+    outStr += key + "#LEODOISPONTOSLEO#" + str(mapping[key]) + "#LEOVIRGULALEO#"
 
 outStr = outStr[: len(outStr) - 1]
 
